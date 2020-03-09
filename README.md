@@ -1,5 +1,5 @@
 # WebCrawler_Labtec
-
+Bot para raspar a internet para analisar componentes para requisição de material para o laboratório
 
 -------------
 
