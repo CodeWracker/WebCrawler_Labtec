@@ -3,6 +3,10 @@ Bot para raspar a internet para analisar componentes para requisição de materi
 
 -------------
 
+# Como usar
+ 
+ Depois de instalar as dependencias abra o arquivo main.py
+
 # Prerrequisitos
 
 - Python 3+
@@ -11,3 +15,5 @@ Bot para raspar a internet para analisar componentes para requisição de materi
 
 # Dependencias
 
+- seleniuum
+### $pip install selenium
