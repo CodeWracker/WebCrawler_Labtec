@@ -1,0 +1,24 @@
+Turbo,TPD,Link,socket,nome,clock,Nucleos,classe
+
+4.4,65.0,https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+3700X&id3485,AM4,AMD Ryzen 7 3700X,3.6,8,Desktop
+
+4.5,105.0,https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+3800X&id3499,AM4,AMD Ryzen 7 3800X,3.9,8,Desktop
+
+4.4,65.0,https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+3700&id3564,AM4,AMD Ryzen 7 PRO 3700,3.6,8,Desktop
+
+4.6,105.0,https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+3900&id3575,AM4,AMD Ryzen 9 3900,3.8,12,Desktop
+
+4.6,105.0,https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+3900X&id3493,AM4,AMD Ryzen 9 3900X,3.8,12,Desktop
+
+4.7,105.0,https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+3950X&id3598,AM4,AMD Ryzen 9 3950X,3.5,16,Desktop
+
+4.3,65.0,https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+PRO+3900&id3563,AM4,AMD Ryzen 9 PRO 3900,3.1,12,Desktop
+
+4.3,140.0,https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-7900X+%40+3.30GHz&id3056,FCLGA2066,Intel Core i7-7900X @ 3.30GHz,3.3,10,Desktop
+
+4.5,140.0,https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-7900X+%40+3.30GHz&id3035,FCLGA2066,Intel Core i9-7900X @ 3.30GHz,3.3,10,Desktop
+
+5.0,95.0,https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-9900KF+%40+3.60GHz&id3435,FCLGA1151-2,Intel Core i9-9900KF @ 3.60GHz,3.6,8,Desktop
+
+4.5,140.0,https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+W-2155+%40+3.30GHz&id3178,FCLGA2066,Intel Xeon W-2155 @ 3.30GHz,3.3,10,Server
+
