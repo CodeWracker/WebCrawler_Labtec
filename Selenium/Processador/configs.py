@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from urllib2 import Request
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 

@@ -1,4 +1,3 @@
-from urllib2 import Request
 import os
 import base64
 from configs import *
