@@ -10,3 +10,4 @@ Bot para raspar a internet para analisar componentes para requisição de materi
 - Ter Firefox instalados
 
 # Dependencias
+
