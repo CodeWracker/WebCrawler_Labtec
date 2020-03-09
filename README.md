@@ -15,5 +15,5 @@ Bot para raspar a internet para analisar componentes para requisição de materi
 
 # Dependencias
 
-- seleniuum
+- selenium
 ### $pip install selenium
