@@ -10,20 +10,42 @@ def createDir(name):
     except:
         print("[download.py] FileExistsError")
 
-def getLink(driver):
+def getLinkRAM(driver,latenciaCorte,capMin):
     print(len(driver))
     for data in driver:
         try:
             data1 = data.find_elements_by_css_selector('td')
-            if(int(data1[1].text)  > 20000):
-                print(data1[0].text)
-                link = data1[0].find_element_by_css_selector('a').get_attribute('href').split("=")
-                link = 'https://www.cpubenchmark.net/cpu.php?cpu='+link[1]+link[2]
-                avaliar(link,data1[0].text)
+            if(int(data1[1].text)  < latenciaCorte):
+                nome = data1[0].text.split(" ")
+                giga = nome[len(nome) -1].split("G")[0]
+                if(int(giga) >=int(capMin)):
+                    link = data1[0].find_element_by_css_selector('a').get_attribute('href').split("=")
+                    link = 'https://www.memorybenchmark.net/ram.php?ram='+link[1]+link[2]
+                    print("Avaliando "+ data1[0].text)
+                    saveDataRAM(link,giga,data1[0].text,data1[1].text)
             #print(data.get_attribute('innerHTML'))
         except:
-            print('Table Header')
-def avaliar(url,name):
+            print('Table Header FOUND')
+            #os.system('cls')
+
+
+def getLinkCPU(driver, pontuacaoMin,clockMin,tdpMin,nucleosMin):
+    print(len(driver))
+    for data in driver:
+        try:
+            data1 = data.find_elements_by_css_selector('td')
+            if(int(data1[1].text)  > int(pontuacaoMin)):
+                print("Avaliando "+ data1[0].text)
+                link = data1[0].find_element_by_css_selector('a').get_attribute('href').split("=")
+                link = 'https://www.cpubenchmark.net/cpu.php?cpu='+link[1]+link[2]
+                avaliarCPU(link,data1[0].text,clockMin,tdpMin,nucleosMin)
+            #print(data.get_attribute('innerHTML'))
+        except:
+            print('Table Header FOUND')
+            os.system('cls')
+
+
+def avaliarCPU(url,name,clockMin,tdpMin,nucleosMin):
     driver = logIn(url)
     data = driver.find_element_by_css_selector('div.left-desc-cpu')
     #print(data.text)
@@ -44,9 +66,9 @@ def avaliar(url,name):
     #print(espec['Nucleos'] >=8)
     #print(espec['TDP']<=140)
 
-    if ( (espec['Clockspeed']>= 3) and  (espec['Nucleos'] >=8)  and  (espec['TDP']<=140) ): 
+    if ( (espec['Clockspeed']>= float(clockMin)) and  (espec['Nucleos'] >=int(nucleosMin))  and  (espec['TDP']<=float(tdpMin)) ): 
         print('CPU Valida')
-        saveData(espec)
+        saveDataCPU(espec)
  
     driver.close()
 
